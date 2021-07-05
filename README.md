@@ -36,12 +36,6 @@ from the 14 SlideSeqV2 spatial transcriptomics datasets
   -i='Puck_180602_18/BeadLocationsForR.csv.gz,Puck_180602_18/MappedDGEForR.csv.gz,Puck_180602_18/clusters.csv,Puck_180602_18' \
   -i='Puck_180602_20/BeadLocationsForR.csv.gz,Puck_180602_20/MappedDGEForR.csv.gz,Puck_180602_20/clusters.csv,Puck_180602_20' \
   -n \
-  -o='slideseq_mouse_brain.n5'_180602_15/clusters.csv,Puck_180602_15' \
-  -i='Puck_180602_16/BeadLocationsForR.csv.gz,Puck_180602_16/MappedDGEForR.csv.gz,Puck_180602_16/clusters.csv,Puck_180602_16' \
-  -i='Puck_180602_17/BeadLocationsForR.csv.gz,Puck_180602_17/MappedDGEForR.csv.gz,Puck_180602_17/clusters.csv,Puck_180602_17' \
-  -i='Puck_180602_18/BeadLocationsForR.csv.gz,Puck_180602_18/MappedDGEForR.csv.gz,Puck_180602_18/clusters.csv,Puck_180602_18' \
-  -i='Puck_180602_20/BeadLocationsForR.csv.gz,Puck_180602_20/MappedDGEForR.csv.gz,Puck_180602_20/clusters.csv,Puck_180602_20' \
-  -n \
   -o='slideseq_mouse_brain.n5'
 ```
 
