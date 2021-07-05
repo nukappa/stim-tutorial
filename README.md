@@ -89,9 +89,35 @@ To facilitate downstream analysis and integration with other tools we developed
 [stimwrap](https://github.com/nukappa/stimwrap), a Python wrapper that enables
 the intuitive extraction of information from the `n5` container within Python.
 
+### Installation
+
 `stimwrap` can be installed directly with pip
 
 ```
 pip install stimwrap
 ```
 
+### Usage
+All datasets and their attributes can be directly accessed now from Python,
+for example:
+
+```
+import strimwrap as sw
+pucks = sw.get_container('slideseq_mouse_brain.n5')
+```
+
+Focus on a specific puck
+
+```
+puck_name = sw.get_datset_names(pucks)[0]
+puck = sw.get_datset(pucks, puck_name)
+```
+
+and extract various information
+
+```
+locations = puck['locations']
+dge = sw.get_gene_expression_from_dataset(pucks, puck_name, gene='all')
+aligned_locations = sw.get_aligned_locations(pucks, puck_name,
+                                                 transformation='icp')
+```
