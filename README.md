@@ -19,9 +19,10 @@ cd ../stim-tutorial/datasets
 ### Creating the project container
 
 After installing `STIM`, run the following command to create the container
-from the 14 SlideSeqV2 spatial transcriptomics datasets
+from the SlideSeqV2 spatial transcriptomics datasets
 
-```st-resave \
+```
+st-resave \
   -i='Puck_180528_20/BeadLocationsForR.csv.gz,Puck_180528_20/MappedDGEForR.csv.gz,Puck_180528_20/clusters.csv,Puck_180528_20' \
   -i='Puck_180528_22/BeadLocationsForR.csv.gz,Puck_180528_22/MappedDGEForR.csv.gz,Puck_180528_22/clusters.csv,Puck_180528_22' \
   -i='Puck_180531_13/BeadLocationsForR.csv.gz,Puck_180531_13/MappedDGEForR.csv.gz,Puck_180531_13/clusters.csv,Puck_180531_13' \
