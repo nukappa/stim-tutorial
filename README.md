@@ -6,11 +6,13 @@ techniques to analyze spatial transcriptomics datasets.
 ## Installation
 To install `STIM`, run the following commands:
 
-```cd ..
+```
+cd ..
 git clone https://github.com/PreibischLab/imglib2-st
 cd imglib2-st
 ./install $HOME/bin
-cd ../stim-tutorial/datasets```
+cd ../stim-tutorial/datasets
+```
 
 ## Usage
 
@@ -46,9 +48,11 @@ from the 14 SlideSeqV2 spatial transcriptomics datasets
 Once the container is created, run the command that aligns the sections in 3D.
 First, align all sections in a pairwise manner
 
-```st-align-pairs \
+```
+st-align-pairs \
   -i slideseq_mouse_brain.n5 \
-  -d 'Puck_180528_20,Puck_180528_22,Puck_180531_13,Puck_180531_17,Puck_180531_18,Puck_180531_19,Puck_180531_22,Puck_180531_23,Puck_180602_15,Puck_180602_16,Puck_180602_17,Puck_180602_18,Puck_180602_20'```
+  -d 'Puck_180528_20,Puck_180528_22,Puck_180531_13,Puck_180531_17,Puck_180531_18,Puck_180531_19,Puck_180531_22,Puck_180531_23,Puck_180602_15,Puck_180602_16,Puck_180602_17,Puck_180602_18,Puck_180602_20'
+```
 
 st-align-pairs \
   -i slideseq_mouse_brain.n5 \
@@ -61,12 +65,16 @@ Then, align the whole stack with ICP
 ### Visualization
 Save a few genes on disk to verify that alignment worked
 
-`mkdir exportdir`
-`st-render -i 'slideseq_mouse_brain.n5' -g 'Calm2,Hpca,Ptgds' -o 'exportdir'`
+```
+mkdir exportdir
+st-render -i 'slideseq_mouse_brain.n5' -g 'Calm2,Hpca,Ptgds' -o 'exportdir'
+```
 
 Explore the data using the `BigDataViewer`
 
-`st-bdv-view -i 'slideseq_mouse_brain.n5' -g 'Calm2,Hpca' -md 'celltype' -sf 0.5`
+```
+st-bdv-view -i 'slideseq_mouse_brain.n5' -g 'Calm2,Hpca' -md 'celltype' -sf 0.5
+```
 
 ## Downstream analysis with python
 All analyses performed by STIM are stored in the `n5` container of the project.
@@ -76,5 +84,7 @@ the intuitive extraction of information from the `n5` container within Python.
 
 `stimwrap` can be installed directly with pip
 
-`pip install stimwrap`
+```
+pip install stimwrap
+```
 
