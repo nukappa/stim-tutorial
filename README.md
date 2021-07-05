@@ -81,7 +81,11 @@ st-render \
 Explore the data using the `BigDataViewer`
 
 ```
-st-bdv-view -i 'slideseq_mouse_brain.n5' -g 'Calm2,Hpca' -md 'celltype' -sf 0.5
+st-bdv-view \
+  -i 'slideseq_mouse_brain.n5' \
+  -g 'Calm2,Hpca' \
+  -md 'celltype' \
+  -sf 0.5
 ```
 
 ## Downstream analysis with python
